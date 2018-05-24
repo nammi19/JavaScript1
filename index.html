@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>First JavaScript Trial</title>
+	</head>
+	<body>
+		<h1 style="color: blue; text-align: center; font-family: georgia; font-size: 50px; ">Hope Learning JavaScript Would Be Fun!</h1>
+
+		<h1 id="Welcome Text" style="font-family: times new roman; font-size: 40px; text-align: center;"></h1>
+
+		<h2 id="about" style="font-family: times new roman; font-size: 30px; text-align: center;"></h2>
+
+		<script src="jsstyle.js" =""></script>
+		<script>
+
+			var user = prompt('Please enter your name');
+			console.log(user);
+			console.log('your name ' + user.length + ' characters long');
+
+			var greet = document.getElementById('Welcome Text');
+			greet.innerHTML = 'Hello, I am ' + user + '!!!';
+
+			var favColor = prompt('What\'s your favorite color');
+			greet.style.color = favColor;
+
+			var info = prompt ('Tell me about yourself');
+
+			document.getElementById('about').innerHTML = info;
+		
+		</script>
+
+	</body>
+</html>
